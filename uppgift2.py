@@ -1,4 +1,3 @@
-# Skriv funktionen här!
 def palindromish(word, grade):
     # Convert string to list of chars.
     if isinstance(word, str):
