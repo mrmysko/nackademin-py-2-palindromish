@@ -2,7 +2,11 @@ from pathlib import Path
 import pytest
 from uppgift2 import palindromish
 
-# Ska fixa denna
+
+def test_palindromish_radar_2():
+    assert (
+        palindromish("radar", 2) == True
+    ), "Testfall 1 misslyckades: 'radar' med grad 2 bör vara True"
 
 
 def test_palindromish_radar_2():
