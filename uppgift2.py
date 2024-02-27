@@ -37,3 +37,5 @@ if __name__ == "__main__":
     print(palindromish("Tenet", 3))  # False
     print(palindromish([1, 2, 3, 50, 60, 3, 2, 1], 3))  # True
     print(palindromish([1, 2, 3, 50, 60, 3, 2, 1], 4))  # False
+
+# Plz work github
