@@ -1,7 +1,9 @@
-def palindromish(word, grade):
+def palindromish(word, grade=1000):
+    """Check if a word is a palindrome to the nth degree."""
+
     # Convert string to list of chars.
-    if isinstance(word, str):
-        word = list(word)
+    if not isinstance(word, list):
+        word = list(str(word))
 
     # Get half length of the word. Dont care about the
     # middle character if it is uneven, so using floor division.
@@ -32,10 +34,12 @@ if __name__ == "__main__":
     # print(palindromish([1, 2, 3, 2, 1], 3))
     # Lägg till fler exempel som visar hur din funktion fungerar
     print(palindromish("radar", 2))  # True
-    print(palindromish("tenet", 5))  # True
+    print(palindromish("tenet"))  # True
+    print(palindromish([1, 2, 3, 50, 60, 3, 2, 1], 3))  # True
+    print(palindromish(123454321, 10))  # True
+    print(palindromish("#/¤/#"))  # True
+    print(palindromish(""))  # True
     print(palindromish("hallojsan", 10))  # False
     print(palindromish("Tenet", 3))  # False
-    print(palindromish([1, 2, 3, 50, 60, 3, 2, 1], 3))  # True
     print(palindromish([1, 2, 3, 50, 60, 3, 2, 1], 4))  # False
-
-# Plz work github
+    print(palindromish(135312))  # False
